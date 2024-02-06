@@ -70,7 +70,7 @@
                 <input type="number" step="0.01" id="measurement_two" class="form-control" required min="0">
             </div>
             <div class="form-group">
-                <label for="square_meter_price">Square Meter Price ($):</label>
+                <label for="square_meter_price">Square Meter Price (DHs):</label>
                 <input type="number" step="0.01" id="square_meter_price" class="form-control" required min="0">
             </div>
             <button type="button" class="btn btn-calculate" onclick="calculate()">Calculate</button>
@@ -95,8 +95,8 @@
 
             var resultsDiv = document.getElementById('results');
             resultsDiv.innerHTML = "<h3>Results:</h3>" +
-                "Total Area: " + totalArea.toFixed(2) + " square meters<br>" +
-                "Total Cost: $" + totalCost.toFixed(2);
+                "Total Area: " + totalArea.toFixed(2) + " m2<br>" +
+                "Total Cost: " + totalCost.toFixed(2) + " DHs";
         }
 
         function resetForm() {
